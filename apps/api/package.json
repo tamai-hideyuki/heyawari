@@ -2,14 +2,19 @@
   "name": "@heyawari/api",
   "private": true,
   "type": "module",
+  "exports": {
+    "./app": "./src/app.ts"
+  },
   "scripts": {
     "dev": "node --watch src/index.ts",
-    "start": "node src/index.ts"
+    "start": "node src/index.ts",
+    "test": "node --test --test-concurrency=1 \"test/**/*.test.ts\""
   },
   "dependencies": {
     "@heyawari/db": "workspace:*",
     "@hono/node-server": "^2.1.5",
     "@hono/zod-validator": "^0.9.1",
+    "better-auth": "^1.7.15",
     "hono": "^4.13.16",
     "zod": "^4.6.7"
   }

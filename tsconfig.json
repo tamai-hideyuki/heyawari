@@ -10,5 +10,5 @@
     "skipLibCheck": true,
     "types": ["node"]
   },
-  "include": ["packages/*/src", "packages/*/*.ts", "apps/api/src"]
+  "include": ["packages/*/src", "packages/*/test", "packages/*/*.ts", "apps/api/src", "apps/api/test"]
 }
