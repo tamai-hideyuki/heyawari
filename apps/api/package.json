@@ -1,0 +1,14 @@
+{
+  "name": "@heyawari/api",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node --watch src/index.ts",
+    "start": "node src/index.ts"
+  },
+  "dependencies": {
+    "@heyawari/db": "workspace:*",
+    "@hono/node-server": "^2.1.5",
+    "hono": "^4.13.16"
+  }
+}

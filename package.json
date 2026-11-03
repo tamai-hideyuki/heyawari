@@ -2,6 +2,9 @@
   "name": "heyawari",
   "private": true,
   "type": "module",
+  "scripts": {
+    "typecheck": "tsc"
+  },
   "devEngines": {
     "packageManager": {
       "name": "pnpm",
@@ -9,5 +12,9 @@
       "onFail": "download"
     }
   },
-  "packageManager": "pnpm@12.16.1"
+  "packageManager": "pnpm@12.16.1",
+  "devDependencies": {
+    "@types/node": "^26.6.6",
+    "typescript": "^7.0.2"
+  }
 }
